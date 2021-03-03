@@ -1,0 +1,26 @@
+{
+  "name": "dom_testing",
+  "version": "1.0.0",
+  "description": "Let's add some DOM testing to my interactive website!",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage",
+    "dev": "concurrently \"watchify ./static/script.js -o bundle.js\" \"python -m http.server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecarlos09/DOM_testing_attempt.git"
+  },
+  "author": "Elwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecarlos09/DOM_testing_attempt/issues"
+  },
+  "homepage": "https://github.com/ecarlos09/DOM_testing_attempt#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "jest": "^26.6.3",
+    "watchify": "^4.0.0"
+  }
+}
